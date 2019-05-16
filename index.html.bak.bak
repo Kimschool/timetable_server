@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+<script>
+$(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+
+        $('#back-to-top').tooltip('show');
+});
+
+</script>
+
+
+<style>
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+    opacity: 0.7;
+}
+
+  #backmovie {
+    position: fixed;
+    z-index: -1000;
+    width: 120%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: -20px;
+  }
+
+  #video-bg {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+</style>
+
+</head>
+
+<body style="color:white;">
+  <div id="backmovie">
+    <video id="video-bg" preload="auto" muted="" autoplay="true" loop>
+      <source type="video/mp4"><source src="sample.mp4" type="video/mp4"></video>
+  </div>
+
+  <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark navigation-clean-button" style="background-color: rgb(224,220,220);opacity: 0.49;">
+    <a class="navbar-brand" href="#">KIMSCHOOL</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container" style="padding-top:100px;">
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">KIMSCHOOL EDUCATION</h1>
+                        <p class="text-center"><span class="by">by</span><a href="#">Author Name</a><span class="date">Sept 8th, 2016 </span></p></div>
+                    <div class="text">
+                        <p>Sed lobortis mi. Suspendisse vel placerat ligula. <span style="text-decoration: underline;">Vivamus</span> ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.
+                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac lacus. <strong>Ut vehicula rhoncus</strong> elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit <em>pulvinar dict</em> vel in justo. Vestibulum ante
+                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                        <h2>Aliquam In Arcu </h2>
+                        <p>Suspendisse vel placerat ligula. Vivamus ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                            posuere cubilia Curae.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Suspendisse vel placerat ligula. Vivamus ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar
+                            dictum vel in justo.</p>
+                        <p>Sed lobortis mi. Suspendisse vel placerat ligula. <span style="text-decoration: underline;">Vivamus</span> ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.
+                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac lacus. <strong>Ut vehicula rhoncus</strong> elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit <em>pulvinar dict</em> vel in justo. Vestibulum ante
+                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                        <h2>Aliquam In Arcu </h2>
+                        <p>Suspendisse vel placerat ligula. Vivamus ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                            posuere cubilia Curae.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Suspendisse vel placerat ligula. Vivamus ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar
+                            dictum vel in justo.</p>
+                        <p>Sed lobortis mi. Suspendisse vel placerat ligula. <span style="text-decoration: underline;">Vivamus</span> ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.
+                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac lacus. <strong>Ut vehicula rhoncus</strong> elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit <em>pulvinar dict</em> vel in justo. Vestibulum ante
+                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                        <h2>Aliquam In Arcu </h2>
+                        <p>Suspendisse vel placerat ligula. Vivamus ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                            posuere cubilia Curae.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Suspendisse vel placerat ligula. Vivamus ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar
+                            dictum vel in justo.</p>
+                        <p>Sed lobortis mi. Suspendisse vel placerat ligula. <span style="text-decoration: underline;">Vivamus</span> ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.
+                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac lacus. <strong>Ut vehicula rhoncus</strong> elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit <em>pulvinar dict</em> vel in justo. Vestibulum ante
+                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                        <h2>Aliquam In Arcu </h2>
+                        <p>Suspendisse vel placerat ligula. Vivamus ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                            posuere cubilia Curae.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Suspendisse vel placerat ligula. Vivamus ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar
+                            dictum vel in justo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+  </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
